@@ -4,7 +4,9 @@
 
 function run() {
   const code = document.getElementById("code").value;
-  let completed = function() {};
+  let completed = function() {
+    say("Completed!");
+  };
   eval(code);
   completed();
 }
