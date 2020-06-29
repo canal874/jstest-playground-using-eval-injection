@@ -4,11 +4,7 @@
 
 function run() {
   const code = document.getElementById("code").value;
-  let completed = function() {
-    document
-      .getElementById("previewArea")
-      .insertAdjacentHTML("beforeend", "Completed!<br>");
-  };
+  let completed = function() {};
   eval(code);
   completed();
 }
